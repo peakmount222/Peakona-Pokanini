@@ -21,11 +21,18 @@
       p{text-indent: 2em;}
       .zoom:hover{transform: scale(1.5); cursor:pointer;}
       img:hover{animation:glowcolors 1.2s infinite alternate;}
-      @keyframes glowcolors{0% {box-shadow: 0 0 20px red;}
-                           25% {box-shadow: 0 0 20px orange;}
-                           50% {box-shadow: 0 0 20px yellow;}
-                           75% {box-shadow: 0 0 20px lightgreen;}
-                           100% {box-shadow: 0 0 20px skyblue;}}
+      @keyframes glowcolors{
+        0% {box-shadow: 0 0 20px red
+        25% {box-shadow: 0 0 20px orange;}
+        50% {box-shadow: 0 0 20px yellow;}
+        75% {box-shadow: 0 0 20px lightgreen;}
+        100% {box-shadow: 0 0 20px skyblue;}
+        }
+      .blink-bg{animation: blinkbg 1s infinite alternative;padding: 3px 6px;}
+      @keyframes blinkbg {
+        0% {background: hotpink;}
+        100% {background: skyblue;}
+      }
     </style>
   </head>
   <body background="https://png.pngtree.com/background/20250102/original/pngtree-soccer-field-and-spotlight-background-in-the-stadium-picture-image_16093827.jpg">
